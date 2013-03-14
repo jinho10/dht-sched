@@ -1,0 +1,49 @@
+
+                               dht-sched 
+           a memcached/membase proxy with hash space schedulability
+
+Developer
+---------
+Jinho Hwang (hwang.jinho@gmail.com)
+http://home.gwu.edu/~jinho10
+The George Washington University
+
+What is it?
+-----------
+
+dht-sched is a research project that schedules a hash space 
+based on hit rate and usage rate of each memory cache server.
+this provides dynamic adjustment on size of hash space
+each cache server is responsible for. 
+
+For more information see https://github.com/jinho10/dht-sched
+
+Compile
+-------
+
+Install all the necessary modules:
+libconflate  
+libevent-2.0.21-stable  
+libmemcached-1.0.10  
+libvbucket  
+memcached-1.4.15  
+moxi: configure --disable-moxi-libvbucket --enable-moxi-libmemcached --without-check
+
+Running
+-------
+
+-. Original consistent hashing:
+moxi -Z mcs_opts=distribution:ketama -z 11211=<server list>
+
+-. dht-sched:
+moxi -Z mcs_opts=distribution:dynamic -q <alpha> -w <beta> -z 11211=<server list>
+
+Input: 
+<server list>: list of memory cache servers
+<alpha>: scheduling parameter to note how important hit rae is. the bigger alpha, the more important 
+hit rate rather than usage rate. <alpha> \in [0, 1.0].
+<beta>: scheduling parameter to note the ratio of how much hash space will be moved each time.
+
+examples:
+moxi -Z mcs_opts=distribution:ketama -z 11211=192.168.1.111:11211,192.168.1.112:11211
+moxi -Z mcs_opts=distribution:dynamic -q 0.5 -w 0.01 -z 11211=192.168.1.111:11211,192.168.1.112:11211
