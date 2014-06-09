@@ -349,6 +349,18 @@ static memcached_return_t update_continuum(memcached_st *ptr)
     pointer_counter+= pointer_per_server;
   }
 
+  // jinho debugging msg for statistics -------------------
+  /*
+  for(uint32_t sn = 0; sn < continuum_index; sn++) {
+    fprintf(stderr, "%u ", ptr->ketama.continuum[sn].index);
+  }
+  fprintf(stderr, "\n");
+  for(uint32_t sn = 0; sn < continuum_index; sn++) {
+    fprintf(stderr, "%u ", ptr->ketama.continuum[sn].value);
+  }
+  */
+  // jinho debugging msg for statistics -------------------
+
   // jinho added for statistics ----------------------
   /*
   if ( ptr->ketama_stat != NULL ) {

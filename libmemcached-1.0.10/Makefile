@@ -1442,9 +1442,9 @@ distcleancheck_listfiles = find . -type f -print
 ACLOCAL = ${SHELL} /home/jinho/xenrepo/moxi/libmemcached-1.0.10/config/missing --run aclocal-1.11
 ALLOCA = 
 AMTAR = $${TAR-tar}
-AM_CFLAGS = -std=c99 -pipe  -O2  -pedantic -Wall -Wundef -Wshadow -Wparentheses -Wno-unused-variable -Wno-unused-parameter -fdiagnostics-show-option   -Wstrict-aliasing -Wswitch-enum  -Wextra -Wformat -Wno-format-nonliteral -Wformat-security -Wstrict-prototypes -Wmissing-prototypes -Wredundant-decls -Wmissing-declarations -Wcast-align -Wsign-compare -Wswitch-default -Wswitch-enum -Wwrite-strings -Wlogical-op   
+AM_CFLAGS = -std=c99 -pipe  -O2  -pedantic -Wall -Wundef -Wshadow -Wparentheses -Wno-unused-variable -Wno-unused-parameter -fdiagnostics-show-option -floop-parallelize-all  -Wstrict-aliasing -Wswitch-enum  -Wextra -Wformat -Wno-format-nonliteral -Wformat-security -Wstrict-prototypes -Wmissing-prototypes -Wredundant-decls -Wmissing-declarations -Wcast-align -Wsign-compare -Wswitch-default -Wswitch-enum -Wwrite-strings -Wlogical-op   
 AM_CPPFLAGS = -I$(top_srcdir) -I$(top_builddir) -ggdb 
-AM_CXXFLAGS = -pipe  -O2  -pedantic -Wall -Wundef -Wshadow -Wparentheses -Wno-unused-variable -Wno-unused-parameter -fdiagnostics-show-option   -Wstrict-aliasing -Wswitch-enum  -Wextra -Wformat -Wno-format-nonliteral -Wformat-security -Woverloaded-virtual -Wnon-virtual-dtor -Wctor-dtor-privacy -Wno-long-long -Wsign-compare  -Wmissing-declarations -Wframe-larger-than=32768 -Wredundant-decls   
+AM_CXXFLAGS = -pipe  -O2  -pedantic -Wall -Wundef -Wshadow -Wparentheses -Wno-unused-variable -Wno-unused-parameter -fdiagnostics-show-option -floop-parallelize-all  -Wstrict-aliasing -Wswitch-enum  -Wextra -Wformat -Wno-format-nonliteral -Wformat-security -Woverloaded-virtual -Wnon-virtual-dtor -Wctor-dtor-privacy -Wno-long-long -Wsign-compare  -Wmissing-declarations -Wframe-larger-than=32768 -Wredundant-decls   
 AM_DEFAULT_VERBOSITY = 0
 AM_LDFLAGS = 
 AR = ar
@@ -1456,7 +1456,7 @@ BETTER_MALLOC_LIBS =
 BOOSTSKIP_WARNINGS = 
 CC = gcc
 CCDEPMODE = depmode=gcc3
-CC_VERSION = gcc (Ubuntu 4.4.3-4ubuntu5.1) 4.4.3
+CC_VERSION = gcc (Ubuntu/Linaro 4.6.3-1ubuntu5) 4.6.3
 CFLAGS =  -I. -I. -I.
 CFLAG_VISIBILITY = -fvisibility=hidden
 CPP = gcc -E
@@ -1465,7 +1465,7 @@ CXX = g++
 CXXCPP = g++ -E
 CXXDEPMODE = depmode=gcc3
 CXXFLAGS = 
-CXX_VERSION = g++ (Ubuntu 4.4.3-4ubuntu5.1) 4.4.3
+CXX_VERSION = g++ (Ubuntu/Linaro 4.6.3-1ubuntu5) 4.6.3
 CYGPATH_W = echo
 DEFS = -DHAVE_CONFIG_H
 DEPDIR = .deps
@@ -1519,20 +1519,20 @@ LN_S = ln -s
 LTLIBOBJS = 
 MAKEINFO = ${SHELL} /home/jinho/xenrepo/moxi/libmemcached-1.0.10/config/missing --run makeinfo
 MANIFEST_TOOL = :
-MEMCACHED_BINARY = 
+MEMCACHED_BINARY = /usr/local/bin/memcached
 MEMCACHED_LIBRARY_VERSION = 11:0:0
 MEMCACHED_PROTOCAL_LIBRARY_VERSION = 0:0:0
 MEMCACHED_SASL_BINARY = 
 MEMCACHED_UTIL_LIBRARY_VERSION = 2:0:0
 MKDIR_P = /bin/mkdir -p
 MYSQLD = /usr/sbin/mysqld
-MYSQL_CFLAGS = 
-MYSQL_CONFIG = no
-MYSQL_LDFLAGS = 
-MYSQL_VERSION = 
+MYSQL_CFLAGS = -I/usr/include/mysql -DBIG_JOINS=1  -fno-strict-aliasing  -g
+MYSQL_CONFIG = /usr/bin/mysql_config
+MYSQL_LDFLAGS = -L/usr/lib/x86_64-linux-gnu -lmysqlclient -lpthread -lz -lm -lrt -ldl
+MYSQL_VERSION = 5.5.31
 NM = /usr/bin/nm -B
 NMEDIT = 
-NO_CONVERSION = -Wno-conversion
+NO_CONVERSION = 
 NO_EFF_CXX = -Wno-effc++
 NO_OLD_STYLE_CAST = -Wno-old-style-cast
 NO_REDUNDANT_DECLS = -Wno-redundant-decls
@@ -1562,7 +1562,7 @@ PERMISSIVE_C_WARNINGS = -Wno-error -Wno-redundant-decls
 PERMISSIVE_WARNINGS = -Wno-error -Wno-unused-function -fpermissive
 PROTOSKIP_WARNINGS = -Wno-effc++ -Wno-shadow -Wno-missing-braces 
 PTHREAD_CC = gcc
-PTHREAD_CFLAGS = 
+PTHREAD_CFLAGS = -pthread
 PTHREAD_LIBS = 
 RANLIB = ranlib
 RT_LIB = -lrt

@@ -166,7 +166,7 @@
 /* #undef HAVE_LIBMTMALLOC */
 
 /* Define to 1 if MySQL libraries are available */
-#define HAVE_LIBMYSQL_BUILD 0
+#define HAVE_LIBMYSQL_BUILD 1
 
 /* Support for Postgres */
 #define HAVE_LIBPQ 0
@@ -240,7 +240,7 @@
 #define HAVE_MURMUR_HASH 1
 
 /* Define to 1 if MySQL libraries are available */
-/* #undef HAVE_MYSQL */
+#define HAVE_MYSQL 1
 
 /* Define to 1 if MySQLD binary is available */
 #define HAVE_MYSQLD_BUILD 1
@@ -405,7 +405,7 @@
 #define LT_OBJDIR ".libs/"
 
 /* Name of the memcached binary used in make test */
-#define MEMCACHED_BINARY "memcached/memcached"
+#define MEMCACHED_BINARY "/usr/local/bin/memcached"
 
 /* Support for memcached_light */
 #define MEMCACHED_LIGHT_BINARY "example/memcached_light"

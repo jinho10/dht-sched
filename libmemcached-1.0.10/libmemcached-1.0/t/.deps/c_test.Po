@@ -1,29 +1,39 @@
 libmemcached-1.0/t/c_test.o: libmemcached-1.0/t/c_test.c \
  /usr/include/stdlib.h /usr/include/features.h \
- /usr/include/bits/predefs.h /usr/include/sys/cdefs.h \
- /usr/include/bits/wordsize.h /usr/include/gnu/stubs.h \
- /usr/include/gnu/stubs-64.h \
- /usr/lib/gcc/x86_64-linux-gnu/4.4.3/include/stddef.h \
- /usr/include/bits/stdlib.h libmemcached/memcached.h \
+ /usr/include/x86_64-linux-gnu/bits/predefs.h \
+ /usr/include/x86_64-linux-gnu/sys/cdefs.h \
+ /usr/include/x86_64-linux-gnu/bits/wordsize.h \
+ /usr/include/x86_64-linux-gnu/gnu/stubs.h \
+ /usr/include/x86_64-linux-gnu/gnu/stubs-64.h \
+ /usr/lib/gcc/x86_64-linux-gnu/4.6/include/stddef.h \
+ /usr/include/x86_64-linux-gnu/bits/stdlib.h libmemcached/memcached.h \
  libmemcached-1.0/memcached.h /usr/include/inttypes.h \
- /usr/include/stdint.h /usr/include/bits/wchar.h \
- /usr/lib/gcc/x86_64-linux-gnu/4.4.3/include/stdbool.h \
- /usr/include/sys/types.h /usr/include/bits/types.h \
- /usr/include/bits/typesizes.h /usr/include/time.h \
+ /usr/lib/gcc/x86_64-linux-gnu/4.6/include/stdint.h /usr/include/stdint.h \
+ /usr/include/x86_64-linux-gnu/bits/wchar.h \
+ /usr/lib/gcc/x86_64-linux-gnu/4.6/include/stdbool.h \
+ /usr/include/x86_64-linux-gnu/sys/types.h \
+ /usr/include/x86_64-linux-gnu/bits/types.h \
+ /usr/include/x86_64-linux-gnu/bits/typesizes.h /usr/include/time.h \
  libmemcached-1.0/visibility.h libmemcached-1.0/configure.h \
- libmemcached-1.0/platform.h /usr/include/sys/socket.h \
- /usr/include/sys/uio.h /usr/include/bits/uio.h \
- /usr/include/bits/socket.h /usr/include/bits/sockaddr.h \
- /usr/include/asm/socket.h /usr/include/asm-generic/socket.h \
- /usr/include/asm/sockios.h /usr/include/asm-generic/sockios.h \
- /usr/include/bits/socket2.h /usr/include/netinet/in.h \
- /usr/include/bits/in.h /usr/include/endian.h /usr/include/bits/endian.h \
- /usr/include/bits/byteswap.h /usr/include/arpa/inet.h \
- /usr/include/netdb.h /usr/include/bits/netdb.h /usr/include/sys/un.h \
- /usr/include/netinet/tcp.h libmemcached-1.0/limits.h \
- libmemcached-1.0/defaults.h libmemcached-1.0/types/behavior.h \
- libmemcached-1.0/types/callback.h libmemcached-1.0/types/connection.h \
- libmemcached-1.0/types/hash.h libmemcached-1.0/types/return.h \
+ libmemcached-1.0/platform.h /usr/include/x86_64-linux-gnu/sys/socket.h \
+ /usr/include/x86_64-linux-gnu/sys/uio.h \
+ /usr/include/x86_64-linux-gnu/bits/uio.h \
+ /usr/include/x86_64-linux-gnu/bits/socket.h \
+ /usr/include/x86_64-linux-gnu/bits/sockaddr.h \
+ /usr/include/x86_64-linux-gnu/asm/socket.h \
+ /usr/include/asm-generic/socket.h \
+ /usr/include/x86_64-linux-gnu/asm/sockios.h \
+ /usr/include/asm-generic/sockios.h \
+ /usr/include/x86_64-linux-gnu/bits/socket2.h /usr/include/netinet/in.h \
+ /usr/include/x86_64-linux-gnu/bits/in.h /usr/include/endian.h \
+ /usr/include/x86_64-linux-gnu/bits/endian.h \
+ /usr/include/x86_64-linux-gnu/bits/byteswap.h /usr/include/arpa/inet.h \
+ /usr/include/netdb.h /usr/include/x86_64-linux-gnu/bits/netdb.h \
+ /usr/include/x86_64-linux-gnu/sys/un.h /usr/include/netinet/tcp.h \
+ libmemcached-1.0/limits.h libmemcached-1.0/defaults.h \
+ libmemcached-1.0/types/behavior.h libmemcached-1.0/types/callback.h \
+ libmemcached-1.0/types/connection.h libmemcached-1.0/types/hash.h \
+ libmemcached-1.0/types/return.h \
  libmemcached-1.0/types/server_distribution.h libmemcached-1.0/return.h \
  libmemcached-1.0/types.h libmemcached-1.0/callbacks.h \
  libmemcached-1.0/alloc.h libmemcached-1.0/triggers.h \
@@ -57,19 +67,19 @@ libmemcached-1.0/t/c_test.o: libmemcached-1.0/t/c_test.c \
 
 /usr/include/features.h:
 
-/usr/include/bits/predefs.h:
+/usr/include/x86_64-linux-gnu/bits/predefs.h:
 
-/usr/include/sys/cdefs.h:
+/usr/include/x86_64-linux-gnu/sys/cdefs.h:
 
-/usr/include/bits/wordsize.h:
+/usr/include/x86_64-linux-gnu/bits/wordsize.h:
 
-/usr/include/gnu/stubs.h:
+/usr/include/x86_64-linux-gnu/gnu/stubs.h:
 
-/usr/include/gnu/stubs-64.h:
+/usr/include/x86_64-linux-gnu/gnu/stubs-64.h:
 
-/usr/lib/gcc/x86_64-linux-gnu/4.4.3/include/stddef.h:
+/usr/lib/gcc/x86_64-linux-gnu/4.6/include/stddef.h:
 
-/usr/include/bits/stdlib.h:
+/usr/include/x86_64-linux-gnu/bits/stdlib.h:
 
 libmemcached/memcached.h:
 
@@ -77,17 +87,19 @@ libmemcached-1.0/memcached.h:
 
 /usr/include/inttypes.h:
 
+/usr/lib/gcc/x86_64-linux-gnu/4.6/include/stdint.h:
+
 /usr/include/stdint.h:
 
-/usr/include/bits/wchar.h:
+/usr/include/x86_64-linux-gnu/bits/wchar.h:
 
-/usr/lib/gcc/x86_64-linux-gnu/4.4.3/include/stdbool.h:
+/usr/lib/gcc/x86_64-linux-gnu/4.6/include/stdbool.h:
 
-/usr/include/sys/types.h:
+/usr/include/x86_64-linux-gnu/sys/types.h:
 
-/usr/include/bits/types.h:
+/usr/include/x86_64-linux-gnu/bits/types.h:
 
-/usr/include/bits/typesizes.h:
+/usr/include/x86_64-linux-gnu/bits/typesizes.h:
 
 /usr/include/time.h:
 
@@ -97,43 +109,43 @@ libmemcached-1.0/configure.h:
 
 libmemcached-1.0/platform.h:
 
-/usr/include/sys/socket.h:
+/usr/include/x86_64-linux-gnu/sys/socket.h:
 
-/usr/include/sys/uio.h:
+/usr/include/x86_64-linux-gnu/sys/uio.h:
 
-/usr/include/bits/uio.h:
+/usr/include/x86_64-linux-gnu/bits/uio.h:
 
-/usr/include/bits/socket.h:
+/usr/include/x86_64-linux-gnu/bits/socket.h:
 
-/usr/include/bits/sockaddr.h:
+/usr/include/x86_64-linux-gnu/bits/sockaddr.h:
 
-/usr/include/asm/socket.h:
+/usr/include/x86_64-linux-gnu/asm/socket.h:
 
 /usr/include/asm-generic/socket.h:
 
-/usr/include/asm/sockios.h:
+/usr/include/x86_64-linux-gnu/asm/sockios.h:
 
 /usr/include/asm-generic/sockios.h:
 
-/usr/include/bits/socket2.h:
+/usr/include/x86_64-linux-gnu/bits/socket2.h:
 
 /usr/include/netinet/in.h:
 
-/usr/include/bits/in.h:
+/usr/include/x86_64-linux-gnu/bits/in.h:
 
 /usr/include/endian.h:
 
-/usr/include/bits/endian.h:
+/usr/include/x86_64-linux-gnu/bits/endian.h:
 
-/usr/include/bits/byteswap.h:
+/usr/include/x86_64-linux-gnu/bits/byteswap.h:
 
 /usr/include/arpa/inet.h:
 
 /usr/include/netdb.h:
 
-/usr/include/bits/netdb.h:
+/usr/include/x86_64-linux-gnu/bits/netdb.h:
 
-/usr/include/sys/un.h:
+/usr/include/x86_64-linux-gnu/sys/un.h:
 
 /usr/include/netinet/tcp.h:
 

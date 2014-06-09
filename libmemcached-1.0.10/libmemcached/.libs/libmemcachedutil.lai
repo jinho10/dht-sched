@@ -14,7 +14,7 @@ library_names='libmemcachedutil.so.2.0.0 libmemcachedutil.so.2 libmemcachedutil.
 old_library='libmemcachedutil.a'
 
 # Linker flags that can not go in dependency_libs.
-inherited_linker_flags=''
+inherited_linker_flags=' -pthread'
 
 # Libraries that this one depends upon.
 dependency_libs=' /usr/local/lib/libmemcached.la -lrt'

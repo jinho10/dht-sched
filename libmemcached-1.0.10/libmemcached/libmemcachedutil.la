@@ -14,7 +14,7 @@ library_names='libmemcachedutil.so.2.0.0 libmemcachedutil.so.2 libmemcachedutil.
 old_library='libmemcachedutil.a'
 
 # Linker flags that can not go in dependency_libs.
-inherited_linker_flags=''
+inherited_linker_flags=' -pthread'
 
 # Libraries that this one depends upon.
 dependency_libs=' /home/jinho/xenrepo/moxi/libmemcached-1.0.10/libmemcached/libmemcached.la -lrt'
@@ -39,4 +39,4 @@ dlpreopen=''
 
 # Directory that this library needs to be installed in:
 libdir='/usr/local/lib'
-relink_command="(cd /home/jinho/xenrepo/moxi/libmemcached-1.0.10; /bin/bash /home/jinho/xenrepo/moxi/libmemcached-1.0.10/libtool  --silent --tag CXX --mode=relink g++ -pipe -O2 -pedantic -Wall -Wundef -Wshadow -Wparentheses -Wno-unused-variable -Wno-unused-parameter -fdiagnostics-show-option -Wstrict-aliasing -Wswitch-enum -Wextra -Wformat -Wno-format-nonliteral -Wformat-security -Woverloaded-virtual -Wnon-virtual-dtor -Wctor-dtor-privacy -Wno-long-long -Wsign-compare -Wmissing-declarations -Wframe-larger-than=32768 -Wredundant-decls -Wno-conversion -DBUILDING_LIBMEMCACHED -version-info 2:0:0 -z relro -z now -o libmemcached/libmemcachedutil.la -rpath /usr/local/lib libmemcached/libmemcached_libmemcachedutil_la-backtrace.lo libmemcachedutil/libmemcached_libmemcachedutil_la-flush.lo libmemcachedutil/libmemcached_libmemcachedutil_la-pid.lo libmemcachedutil/libmemcached_libmemcachedutil_la-ping.lo libmemcachedutil/libmemcached_libmemcachedutil_la-pool.lo libmemcachedutil/libmemcached_libmemcachedutil_la-version.lo libmemcached/libmemcached.la -lm -lrt @inst_prefix_dir@)"
+relink_command="(cd /home/jinho/xenrepo/moxi/libmemcached-1.0.10; /bin/bash /home/jinho/xenrepo/moxi/libmemcached-1.0.10/libtool  --silent --tag CXX --mode=relink g++ -pipe -O2 -pedantic -Wall -Wundef -Wshadow -Wparentheses -Wno-unused-variable -Wno-unused-parameter -fdiagnostics-show-option -floop-parallelize-all -Wstrict-aliasing -Wswitch-enum -Wextra -Wformat -Wno-format-nonliteral -Wformat-security -Woverloaded-virtual -Wnon-virtual-dtor -Wctor-dtor-privacy -Wno-long-long -Wsign-compare -Wmissing-declarations -Wframe-larger-than=32768 -Wredundant-decls -DBUILDING_LIBMEMCACHED -pthread -version-info 2:0:0 -z relro -z now -o libmemcached/libmemcachedutil.la -rpath /usr/local/lib libmemcached/libmemcached_libmemcachedutil_la-backtrace.lo libmemcachedutil/libmemcached_libmemcachedutil_la-flush.lo libmemcachedutil/libmemcached_libmemcachedutil_la-pid.lo libmemcachedutil/libmemcached_libmemcachedutil_la-ping.lo libmemcachedutil/libmemcached_libmemcachedutil_la-pool.lo libmemcachedutil/libmemcached_libmemcachedutil_la-version.lo libmemcached/libmemcached.la -lm -lrt @inst_prefix_dir@)"
